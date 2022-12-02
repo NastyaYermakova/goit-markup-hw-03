@@ -21,6 +21,38 @@ body {
 }
 ul {
   list-style: none;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Хедер */
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 /* Студія */
 
@@ -38,7 +70,15 @@ ul {
 .logo-part {
   color: var(--accent-color);
 }
+.logo-header {
+  margin-right: 93px;
+}
 /* Навігація та контакти*/
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
 .nav-list,
 .contacts-list {
   font-weight: 500;
@@ -46,10 +86,20 @@ ul {
   letter-spacing: 0.02em;
 }
 .nav-list-item {
+  display: inline-block;
+  padding: 32px 0;
   color: var(--secondary-text-color);
   text-decoration: none;
 }
+
+.contacts-list {
+  display: flex;
+  gap: 50px;
+}
+
 .header-contacts {
+  display: inline-block;
+  padding: 32px 0;
   color: var(--primary-text-color);
   text-decoration: none;
 }
@@ -111,7 +161,7 @@ ul {
   line-height: 1.71;
 }
 /* Команда */
-.team {
+.section-team {
   background-color: var(--bgd-team-color);
 }
 .team-item {
